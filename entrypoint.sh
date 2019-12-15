@@ -1,5 +1,8 @@
 #!/bin/sh
 
+UID=${UID:-991}
+GID=${GID:-991}
+
 addgroup -g ${GID} privatebin && \
 adduser -h /privatebin -H -s /bin/sh -D -G privatebin -u ${UID} privatebin
 
